@@ -1,0 +1,8 @@
+<div >
+    <h3>수정화면</h3>
+    <form th:action="@{|/article/modify/${article.id}|}" method="post">
+        <input type="text" name="subject" th:value="${article.subject}">
+        <textarea name="content" id="content" cols="30" rows="10" th:text="${article.content}"></textarea>
+        <button type="submit">수정</button>
+    </form>
+</div>

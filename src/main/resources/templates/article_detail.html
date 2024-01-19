@@ -1,0 +1,6 @@
+
+<div th:text="${article.subject}"></div>
+<div th:text="${article.content}"></div>
+<a th:href="@{/article/list}">목록이동</a>
+<a th:href="@{|/article/modify/${article.id}|}">수정이동</a>
+<a th:href="@{|/article/delete/${article.id}|}">삭제</a>
